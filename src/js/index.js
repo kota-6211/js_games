@@ -1,3 +1,5 @@
+import * as Todo from './modules/todo.js';
+
 // ヘッダーのnav
 const nav = document.querySelector('#nav');
 // カバー（トップ画面）
@@ -11,7 +13,7 @@ appNames.forEach(appName => {
   const menu = document.createElement('a');
   menu.classList.add('nav-menu');
   menu.textContent = appName.toUpperCase();
-  
+
   // appNameがクリックされた時の処理
   menu.addEventListener('click',() => {
     // 初めにカバー（トップ画面）のactiveクラスを消す
@@ -28,7 +30,7 @@ appNames.forEach(appName => {
     navMenus.forEach(navMenu => {
       navMenu.classList.remove('active');
     });
-    menu.classList.add('avtive');
+    menu.classList.add('active');
   });
 
   nav.appendChild(menu);
