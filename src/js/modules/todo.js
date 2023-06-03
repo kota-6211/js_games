@@ -25,6 +25,3 @@ function getTodoData() {
     return JSON.parse(localStorage.getItem('myTodo'));
 }
 
-function createTodoElement(todo) {
-    
-}
